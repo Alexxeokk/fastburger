@@ -1,0 +1,681 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Fast-Burger!!!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Custom CSS externo (estrutura do header + hero vazio para sua imagem) -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Header customizado – apenas estrutura (logo + menu) -->
+    <header class="custom-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="logo">
+                    <!-- SUBSTITUA pela sua logo -->
+                    <img src="img/BURGERICON.png" alt="Logo">
+                    <!-- SUBSTITUA pelo nome da sua marca -->
+                    <span>FAST BURGER</span>
+                </div>
+                <nav class="main-nav">
+                    <ul class="nav-links">
+                        <!-- Personalize os links do menu -->
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="sobrenos.html">SOBRE</a></li>
+                        <li><a href="Menu.html">MENU</a></li>
+                        <li><a href="contact.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="custom-hero">
+        <div class="hero-slider owl-carousel">
+            <!-- Slide 1 -->
+            <div class="single-slide" style="background-image: url('img/banner/imginicial1.png');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 text-center text-white">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="single-slide"
+                style="background-image: url('img/banner/imginicial2.png');">
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 text-center text-white">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adicione mais slides aqui (copie o bloco acima e mude a imagem) -->
+        </div>
+    </section>
+
+    <!-- ==================== Restante do site original (sem alterações) ==================== -->
+
+    <div class="menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center mb-80"><br>
+                        <span>Nosso Cardápio</span>
+                        <h3>Hambúrgueres Artesanais</h3>
+                        <p class="text-muted mt-3">Feitos com ingredientes frescos, carnes selecionadas e muito sabor.
+                            Escolha seu favorito!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs corrigidas (agora funcionam com Bootstrap 4) -->
+            <ul class="nav nav-tabs justify-content-center mb-5" id="menuTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="classicos-tab" data-toggle="tab" href="#classicos" role="tab"
+                        aria-controls="classicos" aria-selected="true">Clássicos</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="premium-tab" data-toggle="tab" href="#premium" role="tab"
+                        aria-controls="premium" aria-selected="false">Premium</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="acompanhamentos-tab" data-toggle="tab" href="#acompanhamentos" role="tab"
+                        aria-controls="acompanhamentos" aria-selected="false">Acompanhamentos</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="combos-tab" data-toggle="tab" href="#combos" role="tab"
+                        aria-controls="combos" aria-selected="false">Combos</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="menuTabsContent">
+                <!-- Clássicos -->
+                <div class="tab-pane fade show active" id="classicos" role="tabpanel" aria-labelledby="classicos-tab">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/burger/1.png" alt="Classic Beef" class="img-fluid rounded mb-3"
+                                        style="height: 200px; object-fit: cover;">
+                                </div>
+                                <h4>Classic Beef</h4>
+                                <p class="text-muted"><strong>180g</strong> de Angus grelhado na chapa</p>
+                                <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+                                    <li>• Pão brioche</li>
+                                    <li>• Queijo cheddar</li>
+                                    <li>• Alface, tomate e cebola</li>
+                                    <li>• Molho especial</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display">R$ 35</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/burger/2.png" alt="Double Cheese" class="img-fluid rounded mb-3"
+                                        style="height: 200px; object-fit: cover;">
+                                </div>
+                                <h4>Double Cheese</h4>
+                                <p class="text-muted">Dois hambúrgueres <strong>100g cada</strong></p>
+                                <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+                                    <li>• Pão de batata</li>
+                                    <li>• Queijo prato duplo</li>
+                                    <li>• Bacon crocante</li>
+                                    <li>• Molho barbecue</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display">R$ 42</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/burger/3.png" alt="Rocket Spicy" class="img-fluid rounded mb-3"
+                                        style="height: 200px; object-fit: cover;">
+                                </div>
+                                <h4>ROCKET SPICY</h4>
+                                <p class="text-muted"><strong>180g</strong> de blend picante</p>
+                                <ul class="list-unstyled text-start mx-auto" style="max-width: 300px;">
+                                    <li>• Pão brioche</li>
+                                    <li>• Queijo pepper jack</li>
+                                    <li>• Jalapeños e molho chipotle</li>
+                                    <li>• Alface e tomate</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display">R$ 40</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium -->
+                <div class="tab-pane fade" id="premium" role="tabpanel" aria-labelledby="premium-tab">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm premium-card">
+                                <div class="img-container">
+                                    <img src="img/burgers/1.png" alt="Presidente" class="img-fluid rounded mb-3"
+                                        style="height: 250px; object-fit: cover;">
+                                </div>
+                                <h4>O Hambúrguer Presidente</h4>
+                                <p class="text-muted"><strong>500g total</strong> – Nosso carro-chefe</p>
+                                <ul class="list-unstyled text-start mx-auto" style="max-width: 400px;">
+                                    <li>• Dois hambúrgueres <strong>250g cada</strong> Black Angus</li>
+                                    <li>• Queijo cheddar inglês</li>
+                                    <li>• Bacon artesanal e cebola caramelizada</li>
+                                    <li>• Molho secreto da casa</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display premium">R$ 89</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm premium-card">
+                                <div class="img-container">
+
+                                    <img src="img/burgers/2.png" alt="Supreme" class="img-fluid rounded mb-3"
+                                        style="height: 250px; object-fit: cover;">
+                                </div>
+
+                                <h4>Presidente Supreme</h4>
+                                <p class="text-muted"><strong>600g total</strong> – Edição limitada</p>
+                                <ul class="list-unstyled text-start mx-auto" style="max-width: 400px;">
+                                    <li>• Três hambúrgueres <strong>200g cada</strong> Wagyu A5</li>
+                                    <li>• Foie gras grelhado</li>
+                                    <li>• Queijo trufado e redução balsâmica</li>
+                                    <li>• Rúcula selvagem</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display premium">R$ 95</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Acompanhamentos -->
+                <div class="tab-pane fade" id="acompanhamentos" role="tabpanel" aria-labelledby="acompanhamentos-tab">
+                    <div class="row">
+                        <!-- Nuggets -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/acompanhamentos/2.png" alt="Nuggets" class="img-fluid">
+                                </div>
+                                <h4>Nuggets</h4>
+                                <p class="text-muted">Porção de <strong>10 unidades</strong> crocantes</p>
+                                <ul class="ingredients-list numbered">
+                                    <li>Frango empanado dourado</li>
+                                    <li>Acompanha molho barbecue</li>
+                                    <li>Ou escolha molho extra</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display">R$ 28</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Batata Frita com Molho da Casa -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/acompanhamentos/1.png" alt="Batata Frita com Molho da Casa"
+                                        class="img-fluid">
+                                </div>
+                                <h4>Batata Frita com Molho da Casa</h4>
+                                <p class="text-muted">Porção <strong>250g</strong> de batata crocante</p>
+                                <ul class="ingredients-list numbered">
+                                    <li>Batata frita sequinha</li>
+                                    <li>Molho especial da casa (maionese temperada)</li>
+                                    <li>Ervas finas por cima</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display">R$ 22</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Batata com Cheddar e Bacon -->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/acompanhamentos/3.png" alt="Batata com Cheddar e Bacon"
+                                        class="img-fluid">
+                                </div>
+                                <h4>Batata com Cheddar e Bacon</h4>
+                                <p class="text-muted">Porção <strong>300g</strong> carregada de sabor</p>
+                                <ul class="ingredients-list numbered">
+                                    <li>Batata frita crocante</li>
+                                    <li>Cheddar derretido abundante</li>
+                                    <li>Bacon em tiras crocantes</li>
+                                    <li>Cebolinha picada</li>
+                                </ul>
+                                <div class="mt-3">
+                                    <span class="price-display">R$ 32</span>
+                                    <a href="#" class="btn btn-pill btn-gold d-block mt-2">Pedir Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combos -->
+                <div class="tab-pane fade" id="combos" role="tabpanel" aria-labelledby="combos-tab">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/combos/1.png" alt="Batata Frita com Molho da Casa" class="img-fluid">
+                                </div>
+                                <h4>Combo Classic</h4>
+                                <ol class="ingredients-list numbered">
+                                    <li>1 Hambúrguer Clássico (180g de Angus)</li>
+                                    <li>1 Batata frita média crocante (200g)</li>
+                                    <li>1 Refrigerante lata 350ml (sabores variados)</li>
+                                    <li>1 Molho extra à escolha</li>
+                                </ol>
+                                <span class="price-display">R$ 32</span>
+                                <a href="#" class="btn btn-pill btn-gold d-block">Pedir Agora</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mb-4">
+                            <div class="menu-card h-100 text-center p-4 border rounded shadow-sm">
+                                <div class="img-container">
+                                    <img src="img/combos/2.png" alt="Batata Frita com Molho da Casa" class="img-fluid">
+                                </div>
+                                <h4>Combo Classic 2</h4>
+                                <ol class="ingredients-list numbered">
+                                    <li>1 Hambúrguer Clássico (180g cada)</li>
+                                    <li>1 Batata frita grande (300g cada)</li>
+                                    <li>1 Refrigerante 500ml (sabores variados)</li>
+                                    <li>1 Molho extra à escolha</li>
+                                    <li>1 Porção de Nuggets</li>
+                                </ol>
+                                <span class="price-display">R$ 32</span>
+                                <a href="#" class="btn btn-pill btn-gold d-block">Pedir Agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Premium aprimorada -->
+    <div class="section_title text-center mb-80"><br>
+        <span>Mais Peidios</span>
+        <h3>DESTAQUES DA SEMANA</h3>
+    </div>
+    <div class="Burger_President_area">
+        <div class="Burger_President_here">
+            <div class="single_Burger_President">
+                <div class="room_thumb">
+                    <img src="img/burgers/1.png" alt="">
+                    <div class="room_heading d-flex justify-content-between align-items-center">
+                        <div class="room_heading_inner text-center text-md-left">
+                            <span class="price-premium">R$ 89</span>
+                            <h3>O Hambúrguer Presidente</h3>
+                            <small class="d-block mb-3 text-muted">Nosso carro-chefe – <strong>500g total</strong>
+                                de
+                                pura perfeição</small>
+                            <p>Pão brioche artesanal, hambúrguer duplo de <strong>250g cada</strong> de carne Black
+                                Angus, queijo cheddar inglês, bacon artesanal, alface crespa, tomate heirloom,
+                                cebola
+                                caramelizada e molho secreto da casa.</p>
+                            <a href="#" class="boxed-btn3">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single_Burger_President">
+                <div class="room_thumb">
+                    <img src="img/burgers/2.png" alt="">
+                    <div class="room_heading d-flex justify-content-between align-items-center">
+                        <div class="room_heading_inner text-center text-md-left">
+                            <span class="price-premium">R$ 95</span>
+                            <h3>O Hambúrguer Presidente Supreme</h3>
+                            <small class="d-block mb-3 text-muted">Edição limitada – <strong>600g total</strong> de
+                                luxo
+                                absoluto</small>
+                            <p>Pão de fermentação natural, hambúrguer triplo de <strong>200g cada</strong> de wagyu
+                                A5,
+                                foie gras grelhado, queijo trufado, rúcula selvagem, tomate confit e redução de
+                                balsâmico 25 anos.</p>
+                            <a href="#" class="boxed-btn3">Pedir Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="about_thumb2">
+                        <div class="img_1">
+                            <img src="img/about/1.png" alt="Foto da equipe preparando hambúrgueres">
+                        </div>
+                        <div class="img_2">
+                            <img src="img/about/2.png" alt="Detalhe de hambúrguer sendo montado">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 offset-lg-1 col-md-6">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <span>Sobre Nós</span>
+                            <h3>O Melhor Hambúrguer <br> da Sua Cidade</h3>
+                        </div>
+                        <p>Na Fast Burger, nosso compromisso é oferecer hambúrgueres artesanais feitos com ingredientes
+                            frescos e selecionados diariamente. Usamos carnes de alta qualidade, pães recém-assados e
+                            molhos exclusivos para criar combinações irresistíveis que conquistam qualquer paladar.
+                            Aqui, cada hambúrguer é preparado com carinho e atenção aos detalhes, garantindo uma
+                            experiência única e cheia de sabor. Venha conhecer o que faz da Fast Burger a escolha
+                            favorita dos amantes de hambúrguer!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="video_area video_bg overlay">
+        <div class="video_area_inner text-center">
+            <h3>Fast <br> Burger</h3>
+            <span>Como preparamos nossos hambúrgueres deliciosos</span>
+            <div class="video_payer">
+                <a href="https://www.youtube.com/watch?v=vLnPwxZdW4Y" class="video_btn popup-video">
+                    <i class="fa fa-play"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Depoimentos -->
+    <div class="testimonial_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title mb-60 text-center">
+                        <span>Depoimentos</span>
+                        <h3>Clientes Satisfeitos</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testmonial_active owl-carousel">
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <p>“O melhor hambúrguer que já comi! Suculento, bem temperado e com ingredientes frescos. Volto sempre!”</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/1.png" alt="Maria Silva">
+                                            </div>
+                                            <h4>Maria Silva</h4>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <p>“Atendimento rápido, ambiente agradável e o hambúrguer é simplesmente incrível. Recomendo!”</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/2.png" alt="João Pedro">
+                                            </div>
+                                            <h4>João Pedro</h4>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="single_testmonial text-center">
+                                        <p>“O sabor é único! Cada mordida é uma explosão de sabor. Melhor hamburgueria da região.”</p>
+                                        <div class="testmonial_author">
+                                            <div class="thumb">
+                                                <img src="img/testmonial/3.png" alt="Daniel Costa">
+                                            </div>
+                                            <h4>Daniel Costa</h4>
+                                            <div class="stars">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="instragram_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_instagram">
+                        <img src="img/instragram/1.png" alt="Foto do Instagram">
+                        <div class="ovrelay">
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_instagram">
+                        <img src="img/instragram/2.png" alt="Foto do Instagram">
+                        <div class="ovrelay">
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_instagram">
+                        <img src="img/instragram/3.png" alt="Foto do Instagram">
+                        <div class="ovrelay">
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single_instagram">
+                        <img src="img/instragram/4.png" alt="Foto do Instagram">
+                        <div class="ovrelay">
+                            <a href="#">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <footer class="footer footer-home">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <!-- São Paulo -->
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget text-center">
+                        <h3 class="footer_title pos_margin">São Paulo - SP</h3>
+                        <p>Rua das Flores, 123 - Jardins<br>
+                            São Paulo - SP - CEP 01420-000<br>
+                            <a href="mailto:contato@fastburger.com.br">contato@fastburger.com.br</a>
+                        </p>
+                        <a class="number" href="tel:+5511999999999">(11) 99999-9999</a>
+                    </div>
+                </div>
+
+                <!-- Rio de Janeiro -->
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="footer_widget text-center">
+                        <h3 class="footer_title pos_margin">Rio de Janeiro - RJ</h3>
+                        <p>Av. Atlântica, 456 - Copacabana<br>
+                            Rio de Janeiro - RJ - CEP 22070-000<br>
+                            <a href="mailto:contato@fastburger.com.br">contato@fastburger.com.br</a>
+                        </p>
+                        <a class="number" href="tel:+5521999999999">(21) 99999-9999</a>
+                    </div>
+                </div>
+
+                <!-- Newsletter + Texto -->
+                <div class="col-xl-4 col-md-12 col-lg-4">
+                    <div class="footer_widget">
+                        <h3 class="footer_title">Fique Conectado</h3>
+                        <form action="#" class="newsletter_form">
+                            <input type="email" placeholder="Digite seu e-mail">
+                            <button type="submit">Inscrever-se</button>
+                        </form>
+                        <p class="newsletter_text">Fique conectado conosco para receber ofertas exclusivas!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes sociais centralizadas -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4">
+                    <div class="socail_links text-center">
+                        <ul>
+                            <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="https://wa.me/5511999999999"><i class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="copy-right_text">
+        <div class="container">
+            <div class="footer_border"></div>
+            <div class="row">
+        
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        // Depoimentos
+        $('.testmonial_active').owlCarousel({
+            loop: true,
+            items: 1,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            navText: ['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>']
+        });
+
+        // Hero slider
+        $('.hero-slider').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            nav: false,
+            dots: true
+        });
+    });
+</script>
+
+    <!-- JS here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
